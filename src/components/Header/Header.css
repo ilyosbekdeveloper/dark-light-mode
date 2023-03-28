@@ -1,0 +1,214 @@
+/* roooooooooots */
+:root{
+    /* navbar */
+    --nav-bg: #FFFFFF;
+    /* nav logo color */
+    --nav-logo-color: #202020;
+    /* nav ul li a color */
+    --nav-link: #0065FF;
+
+    /* theme mode span */
+    --theme-mode-span: #222;
+    /* toggle bg */
+    --toggle-bg: #6d6c6c;
+    --toggle-border: #545353;
+    /* togggle span */
+    --toggle-span-bg: #000;
+
+}
+
+/* Auto layout */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 87px;
+    gap: 511px;
+
+    position: absolute;
+    width: 100%;
+    height: 82px;
+    left: 0px;
+    top: 0px;
+    background: var(--nav-bg);
+    box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.15);
+}
+
+/* NAV DARK MODE */
+nav.dark{
+        /* navbar */
+    --nav-bg: #3C3B3A;
+    /* nav logo color */
+    --nav-logo-color: #c8c6c6;
+    /* nav ul li a color */
+    --nav-link: #e9eaeb;
+
+    /* theme mode span */
+    --theme-mode-span: #ecd7d7;
+    /* toggle bg */
+    --toggle-bg: #ffffff;
+    --toggle-border: #e8e7e7;
+    /* togggle span */
+    --toggle-span-bg: #3C3B3A;
+}
+
+/* Auto layout */
+.leftAligned{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 50px;
+
+    width: 470px;
+    height: 20px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.navLogo{
+    width: 130px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--nav-logo-color);
+}
+
+.leftAligned ul li a{
+    width: 79px;
+    height: 20px;
+
+    /* label */
+
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: var(--nav-link);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.leftAligned ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 290px;
+    height: 20px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* rgiht alligned */
+.rightAlligned{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+    width: 285px;
+    height: 22px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+/* social icons */
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+
+    width: 111px;
+    height: 22px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.socialIcons a img{
+    width: 22px;
+    height: 22px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+/* Theme Mode */
+.themeMode{
+    display: flex;
+    align-items: center;
+}
+/* toggle span */
+.themeMode span{
+    color: var(--theme-mode-span);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* toggle div */
+.toggle{
+    width: 40px;
+    height: 20px;
+    background: var(--toggle-bg);
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--toggle-border);
+    margin: 0 3px;
+    transition: .4s;
+}
+.toggle span {
+    height: 17px;
+    width: 17px;
+    background: var(--toggle-span-bg);
+    position: absolute;
+    border-radius: 50%;
+    right: 2px;
+}
+/* dark mode btn */
+.toggle.darkBtn{
+    background: var(--toggle-bg);
+    transition: 3s; 
+}
+.toggle.darkBtn span{
+    left: 2px;
+    background: var(--toggle-span-bg);
+}
+*{
+    transition: .6s;
+}
